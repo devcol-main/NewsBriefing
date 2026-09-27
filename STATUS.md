@@ -1,2 +1,2 @@
 # 진행 상황
-- 2026-09-27 계획 승인. 태스크 1~4 완료 (sources.md, watchlist.md, templates/briefing.md, briefing-prompt.md) — 다음: 오너 watchlist 작성 + briefings 공개 여부 결정 → 태스크 5 샘플 생성
+- 2026-09-27 태스크 1~4 완료, watchlist 반영 (환율 5 + 나스닥 Top3 동적 + 미국 5 + 한국 2). 저장소 비공개 전환 — 다음: 엔화·원화 인덱스 대체 지표 결정 → 태스크 5 샘플 생성
