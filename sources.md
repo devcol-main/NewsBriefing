@@ -22,9 +22,20 @@
 | 항목 | 소스 | 비고 |
 |---|---|---|
 | 달러 인덱스 (DXY) | ICE 산출, 공개 시세 페이지 | 실시간/지연 시세. 기준 시각 명시 |
-| USD/KRW, USD/JPY, JPY/KRW | 서울 외환시장 마감 기사(15:30), ECB 기준환율 via Frankfurter API (키 불필요) | 한국은행 ECOS는 인증키 필요 (v2) |
+| USD/KRW, USD/JPY, JPY/KRW | **기본: ECB 기준환율 via Frankfurter API (키 불필요)**, 보조: 서울 외환시장 마감 기사(15:30) | 한국은행 ECOS는 인증키 필요 (v2) |
 | 미국 종목 종가·시총 순위 | stockanalysis.com 나스닥 시총 목록 | 기준 시각 표기 없음 — 조회 시각으로 판단 |
 | 엔화·원화 인덱스 | 사용 안 함 | 널리 쓰는 일간 지수 없음 → USD/JPY, USD/KRW로 대체 (2026-09-27 오너 결정) |
+
+## 2-2. 경제 일정 (다음 주 미리보기·일일 일정)
+| 순위 | 소스 | 다루는 것 | 비고 |
+|---|---|---|---|
+| 1 | BEA 발표 일정 (bea.gov/news/schedule) | GDP, PCE·개인소득 | 원문 확인됨 (09-27) |
+| 1 | BLS 발표 일정 (bls.gov/schedule) | 고용지표, CPI·PPI | |
+| 1 | ISM (ismworld.org) | 제조업·서비스업 PMI | 매월 첫 영업일 10:00 ET |
+| 1 | Fed FOMC 일정 (federalreserve.gov) | FOMC | |
+| 1 | 한국은행 금통위 일정, 산업통상부 수출입 동향 | 한국 지표 | |
+| 2 | Investing.com 경제 캘린더 | 전체 일정 + 컨센서스 | 컨센서스 출처 1순위. 페이지 접근 가능 여부 확인 필요 |
+| ✕ | 재게시 블로그 (예: wp.madrestravels.com) | — | 원 게시처(LiteFinance 등)를 찾아 쓰거나 공식 일정으로 대체 |
 
 ## 3. 뉴스
 | 소스 | 방식 | 비고 | MVP 사용 |
