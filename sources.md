@@ -22,7 +22,7 @@
 | 항목 | 소스 | 비고 |
 |---|---|---|
 | 달러 인덱스 (DXY) | ICE 산출, 공개 시세 페이지 | 실시간/지연 시세. 기준 시각 명시 |
-| USD/KRW, USD/JPY, JPY/KRW | **기본: ECB 기준환율 via Frankfurter API (키 불필요)**, 보조: 서울 외환시장 마감 기사(15:30) | 한국은행 ECOS는 인증키 필요 (v2) |
+| USD/KRW, USD/JPY, JPY/KRW | **기본: ECB 기준환율 via Frankfurter API `https://api.frankfurter.dev/v1/<YYYY-MM-DD>?from=USD&to=JPY,KRW` (키 불필요)**, 보조: 서울 외환시장 마감 기사(15:30) | 한국은행 ECOS는 인증키 필요 (v2) |
 | 미국 종목 종가·시총 순위 | stockanalysis.com 나스닥 시총 목록 | 기준 시각 표기 없음 — 조회 시각으로 판단 |
 | 엔화·원화 인덱스 | 사용 안 함 | 널리 쓰는 일간 지수 없음 → USD/JPY, USD/KRW로 대체 (2026-09-27 오너 결정) |
 
@@ -51,6 +51,28 @@
 
 ## 저장소 공개 범위
 - 2026-09-27 저장소를 비공개(private)로 전환. `briefings/` 는 커밋해 기록으로 남긴다.
+
+## 클라우드 네트워크 허용 목록
+클라우드 루틴의 WebFetch·curl 은 환경(Default)의 Network access 허용 목록을 따른다. 목록 밖 도메인은 `EGRESS_BLOCKED` 로 막힌다 (2026-09-28 첫 평일 실행이 이 때문에 실패).
+뉴스 요약은 WebSearch 결과(제목·링크)로 가능하지만, **표에 들어가는 수치는 아래 도메인에서 원문으로 확인한다.**
+
+- `hooks.slack.com`
+- `api.frankfurter.app`
+- `api.frankfurter.dev`
+- `stockanalysis.com`
+- `finance.yahoo.com`
+- `www.bea.gov`
+- `www.bls.gov`
+- `www.ismworld.org`
+- `www.federalreserve.gov`
+- `www.investing.com`
+- `kr.investing.com`
+- `tradingeconomics.com`
+- `www.seoul.co.kr`
+- `www.news1.kr`
+- `www.mt.co.kr`
+
+새 소스를 쓰려면 이 목록에 추가하는 PR 을 올리고, 오너가 환경 설정에도 추가한다.
 
 ## 참고
 - https://www.data.go.kr/data/15094808/openapi.do (금융위원회_주식시세정보)
