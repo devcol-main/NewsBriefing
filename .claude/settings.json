@@ -20,7 +20,12 @@
       "Bash(python *)",
       "Bash(pip install *)",
       "Bash(ls *)",
-      "Bash(mkdir *)"
+      "Bash(mkdir *)",
+      "Bash(gh pr create *)",
+      "Bash(gh pr view *)",
+      "Bash(gh pr diff *)",
+      "Bash(gh pr checks *)",
+      "Bash(gh pr merge *)"
     ],
     "deny": [
       "Bash(rm -rf *)",
