@@ -1,4 +1,4 @@
-# news-briefing
+# NewsBriefing
 
 매일 07:30 KST, 관심 종목·환율·시장 뉴스 브리핑을 자동으로 만들어 `briefings/` 에 커밋하고 Slack(#ai-newsbriefing)으로 알린다.
 

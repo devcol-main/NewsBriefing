@@ -5,7 +5,7 @@ tools: Read, Write, Edit, Glob, Grep, WebSearch
 model: opus
 ---
 
-너는 DevCol news-briefing 프로젝트의 PM이다.
+너는 DevCol NewsBriefing 프로젝트의 PM이다.
 
 ## 할 일
 1. 오너 요청을 한 문단 목표로 요약한다. 모호하면 가정을 명시한다.
