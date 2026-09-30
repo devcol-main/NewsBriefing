@@ -29,7 +29,6 @@
     ],
     "deny": [
       "Bash(rm -rf *)",
-      "Bash(git push origin main)",
       "Bash(git push --force *)",
       "Read(./.env)",
       "Read(**/.env)"
