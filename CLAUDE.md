@@ -14,7 +14,7 @@ DevCol(Development Collaboration) 브랜드의 주식·시장 뉴스 브리핑 �
 - `sources.md` 데이터 소스와 우선순위
 - `templates/` 모드별 양식: `briefing.md`, `weekly-recap.md`, `week-ahead.md`, `monthly.md`
 - `briefings/YYYY/<Month>/YYYY-MM-DD-NewsBriefing.md` 브리핑 결과물 (연도 → 영문 월 이름 폴더, 예: `briefings/2026/September/`. 평일·주말 같은 규칙, 샘플은 `-NewsBriefing-sample.md`). 매달 마지막 날에는 같은 폴더에 `YYYY-MM-DD-NewsBriefing-Monthly.md` (월간 브리핑)을 추가한다.
-- `docs/confirm-protocol.md` 오너 컨펌 형식, `docs/notify.md` Slack 알림
+- `docs/confirm-protocol.md` 오너 컨펌 형식, `docs/notify.md` Slack 알림, `docs/routine-prompt.md` 클라우드 루틴 프롬프트 원문(루틴 설정과 동기화)
 - `PLAN.md` 계획, `STATUS.md` 진행 상황 (한 줄 요약 + 다음 할 일)
 
 ## 작업 방식
