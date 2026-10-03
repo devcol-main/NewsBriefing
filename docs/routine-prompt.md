@@ -4,6 +4,19 @@ claude.ai 루틴 "NewsBriefing 아침 브리핑 (cloud)" (매일 07:30 KST)의 �
 
 변경 요약 (2026-10-03): 파일 경로를 `briefings/<YYYY>/<Month>/` 구조로 변경, 매달 마지막 날 월간 브리핑(<MFILE>) 추가.
 
+**중요:** 이 문서를 GitHub 에서 고쳐도 루틴은 바뀌지 않는다. 루틴은 claude.ai 루틴 설정에 저장된 프롬프트를 실행한다.
+
+### 방법 A: 한 번만 짧은 프롬프트로 교체 (권장)
+루틴 설정의 프롬프트를 아래 짧은 프롬프트로 한 번만 바꿔 두면, 이후 절차 변경은 이 문서만 고치면 되고 루틴 설정을 다시 건드리지 않아도 된다.
+
+```
+너는 DevCol NewsBriefing 브리핑 작성자다. 저장소 devcol-main/NewsBriefing 이 체크아웃되어 있다.
+먼저 `git fetch origin && git checkout main && git pull --ff-only origin main` 을 실행한 뒤, docs/routine-prompt.md 의 "아래 코드 블록 전체가 프롬프트다." 다음에 나오는 ```` 코드 블록 안의 프롬프트를 읽고 그 지시를 처음부터 끝까지 그대로 따른다.
+파일을 읽을 수 없으면 아무것도 만들지 말고, 환경변수 SLACK_WEBHOOK_URL 로 #ai-newsbriefing 에 `⚠️ NewsBriefing: 프롬프트 파일 없음` 을 보낸 뒤 종료한다 (URL 값은 출력하지 않는다).
+```
+
+### 방법 B: 아래 전체 프롬프트를 루틴 설정에 직접 붙여넣기
+
 아래 코드 블록 전체가 프롬프트다.
 
 ````
