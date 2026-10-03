@@ -36,7 +36,7 @@ briefing-prompt.md 의 해당 모드 절차대로 <FILE> 을 만든다 (월간�
 - 시작 전에 네트워크를 확인한다: `curl -s -o /dev/null -w '%{http_code}\n' https://stockanalysis.com/` 가 200 계열이 아니면 원문 확인이 불가능한 것이다. 이 경우 브리핑을 만들지 말고 "네트워크 차단"으로 6단계로 간다.
 - 데이터는 WebSearch/WebFetch 로 모은다. 수치는 sources.md "클라우드 네트워크 허용 목록" 안의 원문 페이지에서 확인한다. 검색 요약 수치를 그대로 쓰지 않는다. 등락률은 두 종가로 직접 계산한다.
 - 환율 ECB 기준환율: `curl -s "https://api.frankfurter.dev/v1/<YYYY-MM-DD>?from=USD&to=JPY,KRW"`, 100엔 기준은 `?from=JPY&to=KRW` 값 × 100.
-- 금지: 매수·매도 추천, 목표가, 투자의견, 자체 전망, 출처·기준 시각 없는 수치.
+- 금지: 매수·매도 추천, 목표가, 투자의견, 출처·기준 시각 없는 수치. 지수·종목 방향 전망은 briefing-prompt.md "전망 섹션 규칙"대로 전망 섹션에만, 근거·출처·반대 요인·확신도와 함께 쓴다.
 
 ## 4. 커밋·push (main 직접 — CLAUDE.md 의 briefings 예외 규칙)
 오늘 만든 브리핑 파일(<FILE>, 월간이면 <MFILE> 포함)만 커밋한다. 다른 파일은 절대 수정·커밋하지 않는다.
