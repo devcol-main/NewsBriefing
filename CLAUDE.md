@@ -5,15 +5,15 @@ DevCol(Development Collaboration) 브랜드의 주식·시장 뉴스 브리핑 �
 2026-09-27 `devcol-main/AIAutomationSampling` 의 `stock-news/` 에서 분리했다 (git 기록 유지). 2026-09-28 저장소 이름을 `news-briefing` → `NewsBriefing` 으로 변경.
 
 ## 목표
-매일 아침 관심 종목과 시장 주요 뉴스를 요약한 브리핑을 만든다. (평일 일일 브리핑, 토 주간 요약, 일 다음 주 미리보기)
+매일 아침 관심 종목과 시장 주요 뉴스를 요약한 브리핑을 만든다. (평일 일일 브리핑, 토 주간 요약, 일 다음 주 미리보기, 매달 마지막 날 월간 브리핑)
 주 실행은 claude.ai 클라우드 루틴 "stock-news 아침 브리핑 (cloud)" — 매일 07:30 KST, 절차는 `briefing-prompt.md`.
 
 ## 파일
 - `briefing-prompt.md` 루틴이 따르는 절차·규칙 (요일별 모드)
 - `watchlist.md` 관심 종목·섹터 (오너가 관리)
 - `sources.md` 데이터 소스와 우선순위
-- `templates/` 모드별 양식: `briefing.md`, `weekly-recap.md`, `week-ahead.md`
-- `briefings/YYYY-MM-DD-NewsBriefing.md` 브리핑 결과물 (평일·주말 모두 같은 규칙, 샘플은 `-NewsBriefing-sample.md`)
+- `templates/` 모드별 양식: `briefing.md`, `weekly-recap.md`, `week-ahead.md`, `monthly.md`
+- `briefings/YYYY/<Month>/YYYY-MM-DD-NewsBriefing.md` 브리핑 결과물 (연도 → 영문 월 이름 폴더, 예: `briefings/2026/September/`. 평일·주말 같은 규칙, 샘플은 `-NewsBriefing-sample.md`). 매달 마지막 날에는 같은 폴더에 `YYYY-MM-DD-NewsBriefing-Monthly.md` (월간 브리핑)을 추가한다.
 - `docs/confirm-protocol.md` 오너 컨펌 형식, `docs/notify.md` Slack 알림
 - `PLAN.md` 계획, `STATUS.md` 진행 상황 (한 줄 요약 + 다음 할 일)
 
