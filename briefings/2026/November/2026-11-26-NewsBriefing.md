@@ -1,0 +1,82 @@
+# 📈 2026-11-26 (목) 아침 브리핑
+
+> 생성 07:47 KST · 정보 요약용이며 투자 권유가 아닙니다.
+
+## 1. 한눈에 (3줄)
+- 전 거래일(11-25) 국내 증시는 하루 전 엔비디아 CEO 복귀발 랠리를 하루 만에 모두 반납하며 코스피 −6.16%(4,697.51)·코스닥 −2.29%(650.64)로 급락했다(외국인 1조8,993억원 순매도, 개인 1조4,224억원 순매수, 사이드카 발동). 美 증시는 장중 기술주 급락분을 상당 부분 회복하며 S&P500 −0.25%·나스닥 −0.62%로 소폭 하락 마감했고, 공포지수(VIX)는 28.32로 7.44% 올랐다.
+- 관심 종목 중 삼성전자(−9.87%)·SK하이닉스(−11.05%)가 반도체 밸류체인 투자심리 악화로 동반 급락했고, 엔비디아(−3.91%)도 S&P의 신용등급 경고(CreditWatch Negative)·中 AI칩 수출 규제 강화 속에 2거래일 연속 내렸다. AMD(−1.75%)·알파벳(−2.13%)·마이크로소프트(−1.25%)·테슬라(−1.18%)도 내렸고, 애플(+0.43%)·스페이스X(+1.30%)만 소폭 올랐다.
+- 오늘(11-26) 美 NYSE·나스닥은 추수감사절로 휴장하고(11-27 조기 폐장), 국내는 한국은행 금융통화위원회 기준금리 결정이 예정돼 있다(컨센서스 3.25%, 직전 3.00%). 관심 종목 중 오늘로 확인된 실적 발표 일정은 없다.
+
+## 2. 지수
+| 지수 | 종가 | 등락 | 기준 | 출처 |
+|---|---|---|---|---|
+| KOSPI | 4,697.51 | −6.16% | 11-25 종가 | [kr.investing.com](https://kr.investing.com/indices/kospi-historical-data) |
+| KOSDAQ | 650.64 | −2.29% | 11-25 종가 | [kr.investing.com](https://kr.investing.com/indices/kosdaq-historical-data) |
+| S&P 500 | 7,182.78 | −0.25% | 11-25 종가 (ET) | [Yahoo Finance](https://finance.yahoo.com/quote/%5EGSPC/history/) |
+| NASDAQ | 23,585.80 | −0.62% | 11-25 종가 (ET) | [Yahoo Finance](https://finance.yahoo.com/quote/%5EIXIC/history/) |
+
+<sub>국내·美 모두 전 거래일은 11-25(수). 오늘(11-26)은 美 NYSE·나스닥이 추수감사절로 휴장이고 11-27(금)은 조기 폐장(13:00 ET)이다([investing.com 휴장일 캘린더](https://www.investing.com/holiday-calendar/), 11-26 조회). 국내는 오늘 휴장 없음([kr.investing.com 휴장일 캘린더](https://kr.investing.com/holiday-calendar/), 11-26 조회). 등락률은 11-24 종가(KOSPI 5,006.03·KOSDAQ 665.88, 둘 다 [kr.investing.com](https://kr.investing.com/indices/kospi-historical-data); S&P500 7,201.09·NASDAQ 23,733.54, [Yahoo Finance](https://finance.yahoo.com/quote/%5EGSPC/history/))와 위 11-25 종가를 `python3 -c`로 직접 계산해 각 출처 히스토리 표의 표시 등락률과 일치함을 확인. 같은 날 다우존스는 50,182.95(+0.33%)로 소폭 올랐으나 watchlist 대상이 아니라 표에는 넣지 않음([investing.com](https://www.investing.com/news/stock-market-news/us-stocks-mixed-at-close-of-trade-dow-jones-industrial-average-up-033-5051523)). 공포지수(VIX)는 같은 출처 기준 28.32로 전일 대비 +7.44%. 코스피는 장중 서킷브레이커(사이드카)가 발동됐다([news1.kr](https://www.news1.kr/finance/market-exr/6365864)).</sub>
+
+## 2-1. 현금·환율
+| 항목 | 값 | 등락 | 기준 | 출처 |
+|---|---|---|---|---|
+| 달러 인덱스 (DXY) | 103.69 | −0.12% | 11-25 종가 (ET) | [Yahoo Finance](https://finance.yahoo.com/quote/DX-Y.NYB/history/) |
+| USD/JPY | 159.32 | +0.16% | 11-25 ECB 기준환율 | [Frankfurter/ECB](https://api.frankfurter.dev/v1/2026-11-25?from=USD&to=JPY,KRW) |
+| USD/KRW | 1,345.40 | +0.07% | 11-25 ECB 기준환율 | [Frankfurter/ECB](https://api.frankfurter.dev/v1/2026-11-25?from=USD&to=JPY,KRW) |
+| JPY/KRW (100엔) | 844.44 | −0.09% | 11-25 ECB 기준환율 | [Frankfurter/ECB](https://api.frankfurter.dev/v1/2026-11-25?from=JPY&to=KRW) |
+
+<sub>등락은 11-24 값(DXY 103.81, [Yahoo Finance](https://finance.yahoo.com/quote/DX-Y.NYB/history/); USD/JPY 159.07·USD/KRW 1,344.51, [Frankfurter 11-24](https://api.frankfurter.dev/v1/2026-11-24?from=USD&to=JPY,KRW); JPY/KRW 845.23, [JPY 기준](https://api.frankfurter.dev/v1/2026-11-24?from=JPY&to=KRW))과 비교해 `python3 -c`로 계산. DXY는 교차 확인한 [investing.com](https://www.investing.com/indices/usdollar-historical-data)에서 11-25 103.70(11-24 103.81 대비 −0.11%)으로 집계돼 Yahoo Finance(103.69·−0.12%)와 소수점 수준 불일치가 있음(등락률은 Yahoo Finance 기준 계산).</sub>
+
+## 3. 관심 종목
+**나스닥 시총 Top 3** (조회 시각 기준, 기준일 표기 없음): 1. 애플 · 2. 마이크로소프트 · 3. 엔비디아 ([stockanalysis.com](https://stockanalysis.com/list/nasdaq-stocks/)) — 엔비디아가 2거래일 연속 하락하며 11-24~11-25 기준으로 유지됐던 2위에서 3위로, 마이크로소프트가 3위에서 2위로 올라섰다.
+
+| 종목 | 종가 | 등락 | 기준 | 한 줄 메모 | 출처 |
+|---|---|---|---|---|---|
+| 애플 (AAPL) | $355.58 | +0.43% | 11-25 종가 | UBS에 따르면 iPhone Duo 대기 기간이 전주 대비 평균 32일 줄어듦(수요·공급 변화 중 어느 쪽인지는 본문에 명시되지 않음) | [stockanalysis.com](https://stockanalysis.com/stocks/aapl/history/) |
+| 마이크로소프트 (MSFT) | $489.93 | −1.25% | 11-25 종가 | 사상 최악 수준의 24시간 장애를 '코드레드'로 선언했다는 보도(로이터) 속 하락, 전날엔 Xbox 'Project Helix' 콘솔 소식에 상승 | [stockanalysis.com](https://stockanalysis.com/stocks/msft/history/) |
+| 엔비디아 (NVDA) | $149.30 | −3.91% | 11-25 종가 | S&P가 이사회 독립성·경영 감독 우려로 신용등급을 'CreditWatch Negative'로 지정, 中 AI칩 접속 규제 강화 속 2거래일 연속 하락 | [stockanalysis.com](https://stockanalysis.com/stocks/nvda/history/) |
+| AMD | $406.03 | −1.75% | 11-25 종가 | 델의 대규모 AI 수주잔고 공개에도 관세·AI 지출 지속성 우려로 반도체주 동반 하락 | [stockanalysis.com](https://stockanalysis.com/stocks/amd/history/) |
+| 알파벳 (GOOGL) | $273.10 | −2.13% | 11-25 종가 | "엔비디아의 고통이 알파벳의 이득"이라는 시각(Schwab Network)에도 기술주 전반 매도세 속 동반 하락 | [stockanalysis.com](https://stockanalysis.com/stocks/googl/history/) |
+| 테슬라 (TSLA) | $380.14 | −1.18% | 11-25 종가 | EU가 테슬라 자율주행 기술 승인 논의를 12월 15일로 연기(로이터) | [stockanalysis.com](https://stockanalysis.com/stocks/tsla/history/) |
+| 스페이스X (SPCX) | $127.44 | +1.30% | 11-25 종가 | FCC가 궤도 위성 데이터센터 구축 계획을 승인(CNBC 등); 상원은 비경쟁 군수계약 제한을 추진 중 | [stockanalysis.com](https://stockanalysis.com/stocks/spcx/history/) |
+| 삼성전자 | 170,700원 | −9.87% | 11-25 종가 | 美 반도체주 약세·中 수출 규제·메모리 공급과잉 우려로 외국인 대규모 순매도 | [kr.investing.com](https://kr.investing.com/equities/samsung-electronics-co-ltd-historical-data) |
+| SK하이닉스 | 1,030,000원 | −11.05% | 11-25 종가 | 美 반도체주 약세·中 수출 규제·메모리 공급과잉 우려로 외국인 대규모 순매도 | [kr.investing.com](https://kr.investing.com/equities/sk-hynix-inc-historical-data) |
+
+<sub>개별 종목 등락률은 11-24 종가(애플 $354.07·마이크로소프트 $496.13·엔비디아 $155.38·AMD $413.27·알파벳 $279.05·테슬라 $384.68·스페이스X $125.81, 모두 [stockanalysis.com history](https://stockanalysis.com/stocks/aapl/history/) 등 각 종목 히스토리 페이지; 삼성전자 189,400원·SK하이닉스 1,158,000원, [kr.investing.com](https://kr.investing.com/equities/samsung-electronics-co-ltd-historical-data))와 위 11-25 종가를 `python3 -c`로 직접 계산해 각 출처 페이지의 표시 등락률과 일치함을 확인. 나스닥 Top3 순위는 조회 시각 기준(시총 애플 $5.17T·마이크로소프트 $3.64T·엔비디아 $3.61T)이며 종가 기준일 표기는 페이지에 없음. 엔비디아는 watchlist 대상은 아니나 나스닥 Top3 편입으로 표에 포함. 마이크로소프트는 watchlist 3번과 중복돼 별도 행을 추가하지 않음. 코스피·코스닥 수급(외국인 1조8,993억원 순매도, 개인 1조4,224억원 순매수)은 [news1.kr](https://www.news1.kr/finance/market-exr/6365864) 확인.</sub>
+
+## 4. 주요 뉴스 (최대 5건)
+1. **코스피·코스닥, 엔비디아발 급등분 하루 만에 반납 — 각각 −6.16%·−2.29%** — 11-25 코스피는 전일 대비 308.52포인트(−6.16%) 내린 4,697.51, 코스닥은 15.24포인트(−2.29%) 내린 650.64로 마감했다. 전일(11-24) 美 엔비디아 CEO 복귀 랠리를 하루 늦게 따라가며 급등했던 분을 하루 만에 모두 반납했고, 메모리 공급 과잉 우려로 AI 투자심리가 재차 위축된 영향이 컸다. 외국인은 약 1조8,993억원을 순매도했고, 개인은 1조4,224억원을 순매수했다. ([news1.kr](https://www.news1.kr/finance/market-exr/6365864), 11-25 16:22; [news1.kr](https://www.news1.kr/finance/market-exr/6365828), 11-25 15:35)
+2. **美 3대 지수, 장중 기술주 급락 후 반등 — S&P500 −0.25%·나스닥(종합) −0.62%, VIX 7.44%↑** — 11-25(현지) 장 초반 기술주 중심의 급락세가 나타났으나 오후 들어 낙폭을 상당 부분 되돌렸다. 다우존스는 소재·산업재 강세에 +0.33%(50,182.95) 올랐고, 공포지수(VIX)는 28.32로 7.44% 뛰었다. 10월 PCE 물가지수는 전년 대비 3.8% 상승으로 집계됐다. ([investing.com](https://www.investing.com/news/stock-market-news/us-stocks-mixed-at-close-of-trade-dow-jones-industrial-average-up-033-5051523), 11-25; [investing.com](https://www.investing.com/news/stock-market-news/wall-street-rebounds-amid-fragile-sentiment-as-nasdaq-recovers-from-steep-morning-drop-93CH-5051426), 11-25 15:31 ET 입력)
+3. **엔비디아, S&P 신용등급 경고 속 2거래일 연속 하락 — 中 수출 규제 재부각** — S&P는 이사회 독립성과 경영진 감독에 대한 우려를 들어 엔비디아의 신용등급을 'CreditWatch Negative'로 지정했다. 美 정부가 中 기업의 원격 접속을 제한하는 AI칩 수출 규제를 강화했다는 보도도 겹치며 주가는 11-25 −3.91% 내린 $149.30으로 2거래일 연속 하락했다. 다만 로이터는 법무부가 황 CEO 복귀 전 별도 조사를 개시하지 않았다고 보도해 정치적 불확실성 일부는 완화됐다. ([stockanalysis.com](https://stockanalysis.com/stocks/nvda/) 관련 Reuters·Barron's 기사, 11-25)
+4. **AMD 등 반도체주 동반 약세 — 델 AI 수주잔고 호재에도 관세·지출 우려 지속** — 델이 1,320억달러 규모 AI 수주잔고를 공개했음에도 AMD·인텔·마이크론·샌디스크 등 반도체주가 관세, 추가 AI 지출 우려 속에 동반 하락했다. AMD는 11-25 −1.75% 내린 $406.03로 마감했다(장중에는 전일 대비 약 10% 하락한 $370대까지 밀렸다가 낙폭을 회복). ([stockanalysis.com](https://stockanalysis.com/stocks/amd/history/) 관련 Invezz·TipRanks 기사, 11-25)
+5. **테슬라-스페이스X, 3.5조달러 규모 합병 추진 가속 — 이사 5인 지명** — 파이낸셜타임스는 테슬라와 스페이스X가 합병 협상을 이끌 이사 5명을 지정했다고 보도했다. TipRanks에 따르면 두 회사가 약 3.5조달러 규모 합병에 대비해 딜팀을 꾸렸고, 한 투자자(게리 블랙)는 합병 조건에 따라 테슬라 주가가 100달러 아래로 떨어질 수 있다고 경고했다. ([stockanalysis.com](https://stockanalysis.com/stocks/tsla/) 관련 FT(TheFly 재인용)·TipRanks 기사, 11-24~25)
+
+## 5. 오늘 일정
+- 美 NYSE·나스닥 오늘(11-26) 추수감사절 휴장, 11-27(금) 13:00 ET 조기 폐장 ([investing.com 휴장일 캘린더](https://www.investing.com/holiday-calendar/), 11-26 조회)
+- 한국은행 금융통화위원회 기준금리 결정 (컨센서스 3.25%, 직전 3.00%; 정확한 발표 시각은 확인 필요) ([investing.com](https://www.investing.com/economic-calendar/south-korean-interest-rate-decision-473), 11-26 조회)
+- 애플·마이크로소프트·엔비디아·AMD·알파벳·테슬라·스페이스X·삼성전자·SK하이닉스의 실적 발표·주주총회 등 오늘로 확인된 일정은 없다 (각 종목 stockanalysis.com·kr.investing.com 페이지 확인, 11-26)
+- 국내 증시 휴장 없음(오늘) ([kr.investing.com 휴장일 캘린더](https://kr.investing.com/holiday-calendar/), 11-26 조회)
+
+## 6. 전망 (자체 판단)
+**직전 전망 점검:** 직전 일일 브리핑([2026-11-25](2026-11-25-NewsBriefing.md))의 전망(기간 11-25~11-26)은 대상 기간이 오늘(11-26)까지라 아직 두 종가 모두를 확인할 수 없어 점검이 불가능하다(美 쪽은 오늘 휴장이라 다음 종가는 11-27에야 나온다). 따라서 전전 거래일 브리핑인 [2026-11-24](2026-11-24-NewsBriefing.md)의 전망(기간 11-24~11-25, 13건)을 11-24→11-25 종가로 점검했다(값은 위 2·2-1·3번 참고). 방향 구성은 상승 우세 7건(KOSPI·KOSDAQ·S&P500·NASDAQ·엔비디아·삼성전자·SK하이닉스), 방향성 불분명 6건(애플·마이크로소프트·알파벳·AMD·테슬라·스페이스X)이었다. 결과: 적중 1건(애플 +0.43%는 방향성 불분명의 ±0.5% 밴드 안에 들어 적중), 빗나감 12건(KOSPI −6.16%·KOSDAQ −2.29%·S&P500 −0.25%·NASDAQ −0.62%·엔비디아 −3.91%·삼성전자 −9.87%·SK하이닉스 −11.05%는 "상승 우세" 예측과 반대 방향으로 나타났고, 마이크로소프트 −1.25%·알파벳 −2.13%·AMD −1.75%·테슬라 −1.18%·스페이스X +1.30%는 모두 "방향성 불분명"의 ±0.5% 밴드를 벗어났다), 판단 보류 0건. 11-24 아침 전망 시점에는 엔비디아 CEO 복귀 소식이 호재로 작용할 것으로 봤으나, 하루 만에 美 반도체주가 신용등급 경고·수출규제 재부각으로 되돌림에 들어가고 국내 증시도 전일 급등분을 그대로 반납하는 등 예상과 반대 방향의 급격한 변동이 나타났다.
+
+| 대상 | 방향 | 기간 | 판단 근거 (출처) | 반대 요인 | 확신도 |
+|---|---|---|---|---|---|
+| KOSPI | 하락 우세 | 11-26~11-27 | 1. 엔비디아가 11-25(현지) S&P의 신용등급 경고(CreditWatch Negative)·中 AI칩 수출 규제 강화 속에 추가로 −3.91% 내렸는데, 이 흐름은 11-25 KRX 마감 이후 나와 아직 국내 증시에 반영되지 않았다 ([stockanalysis.com](https://stockanalysis.com/stocks/nvda/) 관련 Reuters·Barron's 기사)<br>2. 델의 AI 수주잔고 호재에도 AMD·마이크론·샌디스크 등 반도체주가 관세·AI 지출 우려로 동반 하락해 반도체 밸류체인 전반에 투자심리 부담이 이어지고 있다 ([stockanalysis.com](https://stockanalysis.com/stocks/amd/history/) 관련 Invezz·TipRanks 기사) | 코스피는 전일(11-25) −6.16% 급락한 뒤라 기술적 반등(저가 매수) 가능성이 있고, 오늘 한국은행 금리 결정 결과에 따라 변동성이 커질 수 있다 ([investing.com](https://www.investing.com/economic-calendar/south-korean-interest-rate-decision-473)) | 보통 — 독립적 하락 근거 2개(엔비디아 추가 약세 미반영, 반도체주 전반 투자심리 부담)가 있으나 전일 급락에 따른 반등 가능성·BOK 변수가 반대 요인으로 있음 |
+| KOSDAQ | 하락 우세 | 11-26~11-27 | 1. 엔비디아 신용등급 경고·中 수출 규제가 KRX 마감 후 나와 아직 반영되지 않았고, 코스닥은 반도체 비중이 높아 업종 전반 투자심리에 더 민감하게 반응해 온 터다 ([stockanalysis.com](https://stockanalysis.com/stocks/nvda/) 관련 Reuters·Barron's 기사)<br>2. AMD 등 반도체주가 관세·AI 지출 우려로 동반 하락해 투자심리 부담이 이어지고 있다 ([stockanalysis.com](https://stockanalysis.com/stocks/amd/history/) 관련 Invezz·TipRanks 기사) | 코스닥도 전일 −2.29% 하락한 뒤라 기술적 반등 가능성이 있다 ([kr.investing.com](https://kr.investing.com/indices/kosdaq-historical-data)) | 보통 — 독립적 하락 근거 2개(엔비디아 추가 약세 미반영, 반도체주 투자심리 부담)가 있으나 전일 하락에 따른 반등 가능성이 반대 요인으로 있음 |
+| S&P 500 | 방향성 불분명 | 11-26~11-27 | 상승: "엔비디아의 고통이 알파벳의 이득"이라는 시각이 있고 알파벳 등 일부 대형 기술주에 반사이익 기대가 있다 ([stockanalysis.com](https://stockanalysis.com/stocks/googl/) 관련 Schwab Network 기사)<br>하락: 엔비디아 신용등급 경고·中 수출 규제, 관세·AI 지출 지속성 우려로 반도체주 전반이 약세를 보였고 VIX도 28.32로 7.44% 올랐다 ([investing.com](https://www.investing.com/news/stock-market-news/us-stocks-mixed-at-close-of-trade-dow-jones-industrial-average-up-033-5051523)) | 오늘은 美 증시가 추수감사절로 휴장이라 다음 거래일(11-27)은 조기 폐장으로 거래량이 적어 변동성 해석에 주의가 필요하다 | 낮음 — 상승·하락 근거가 팽팽하고 휴장·조기 폐장으로 참고 거래량도 제한적 |
+| NASDAQ | 방향성 불분명 | 11-26~11-27 | 상승: 알파벳이 엔비디아 약세의 반사이익을 받을 수 있다는 시각이 있다 ([stockanalysis.com](https://stockanalysis.com/stocks/googl/) 관련 Schwab Network 기사)<br>하락: 엔비디아(−3.91%)·AMD(−1.75%) 등 반도체주가 신용등급 경고·수출규제·관세 우려로 동반 약세를 보였다 ([stockanalysis.com](https://stockanalysis.com/stocks/nvda/history/), [stockanalysis.com](https://stockanalysis.com/stocks/amd/history/)) | 오늘 美 증시 휴장으로 다음 종가(11-27)는 조기 폐장 거래 기준이라 평소보다 변동성 해석에 주의가 필요하다 | 낮음 — 상승·하락 근거가 팽팽하고 휴장·조기 폐장으로 참고 거래량도 제한적 |
+| 애플 (AAPL) | 판단 보류 | 11-26~11-27 | UBS가 iPhone Duo의 평균 대기 기간이 전주 대비 32일 줄었다고 분석한 기사를 확인했으나, 이 변화가 수요 증가(생산 확대) 때문인지 수요 둔화 때문인지, UBS의 방향성 의견이 무엇인지는 본문에서 확인되지 않았다. 그 밖의 애플 고유 뉴스는 확인되지 않았다 ([stockanalysis.com](https://stockanalysis.com/stocks/aapl/) 관련 TheFly(UBS) 기사) | 판단 보류 — 확인된 사실의 방향성 함의가 불분명해 반대 요인도 특정하지 않음 | 해당 없음 — 판단 보류 |
+| 마이크로소프트 (MSFT) | 방향성 불분명 | 11-26~11-27 | 상승: 전일(11-24) Xbox 'Project Helix'가 일반 게이밍 콘솔로 출시될 것이라는 보도에 상승했고, 클라우드 PC 복귀 계획 소식에도 소폭 올랐다 ([stockanalysis.com](https://stockanalysis.com/stocks/msft/) 관련 TipRanks 기사)<br>하락: 로이터에 따르면 마이크로소프트가 사상 가장 파괴적인 수준의 24시간 장애를 '코드레드'로 선언했고, Windows 재편 계획('Next Chapter') 소식에도 주가가 내렸다 ([stockanalysis.com](https://stockanalysis.com/stocks/msft/) 관련 Reuters·TipRanks 기사) | 11-25 −1.25% 하락은 이미 기술주 전반 약세에 상당 부분 동반한 것으로 보여, 고유 악재의 영향력이 생각보다 크지 않을 수 있다 (같은 출처) | 낮음 — 상승·하락 근거가 팽팽함 |
+| 엔비디아 (NVDA) | 하락 우세 | 11-26~11-27 | 1. S&P가 이사회 독립성·경영 감독에 대한 우려를 들어 신용등급을 'CreditWatch Negative'로 지정했다 ([stockanalysis.com](https://stockanalysis.com/stocks/nvda/) 관련 Reuters·Barron's 기사)<br>2. 美 정부가 中 기업의 AI칩 원격 접속을 제한하는 수출 규제를 강화했다는 보도로 수요 우려가 재부각됐다 (같은 출처) | 로이터에 따르면 법무부는 황 CEO 복귀 전 별도 조사를 개시하지 않았다고 확인돼, 정치적 불확실성의 한 축은 완화됐다 ([stockanalysis.com](https://stockanalysis.com/stocks/nvda/) 관련 Reuters 기사) | 보통 — 독립적 하락 근거 2개(신용등급 경고, 中 수출 규제)가 있으나 DOJ 조사 미개시 확인이 반대 요인으로 있음 |
+| AMD | 하락 우세 | 11-26~11-27 | 1. 델의 1,320억달러 규모 AI 수주잔고 공개에도 AMD·인텔이 하락해, 시장이 AI 지출 지속성에 의문을 제기하고 있음을 보여준다 ([stockanalysis.com](https://stockanalysis.com/stocks/amd/history/) 관련 Invezz 기사)<br>2. 13F 공시 분석 결과 대형 투자자들이 급락 전에 AMD 주식을 매도했다는 보도가 재조명되며 투자심리가 약화됐다 ([stockanalysis.com](https://stockanalysis.com/stocks/amd/) 관련 TipRanks 기사) | TipRanks의 다른 분석은 엔비디아 대비 AMD의 상대적 저평가를 매수 기회로 보는 시각도 있다고 전한다 (같은 출처) | 보통 — 독립적 하락 근거 2개(AI 지출 지속성 의문, 대형 투자자 매도 재조명)가 있으나 상대적 저평가 시각이 반대 요인으로 있음 |
+| 알파벳 (GOOGL) | 방향성 불분명 | 11-26~11-27 | 상승: "엔비디아의 고통이 알파벳의 이득"이라는 시각이 있다 ([stockanalysis.com](https://stockanalysis.com/stocks/googl/) 관련 Schwab Network 기사)<br>하락: 기술주 전반 매도세 속에 11-25 −2.13% 하락했고, AI 신용 우려로 오라클·알파벳 등의 부채 보험료(CDS)가 사상 최고치로 올랐다는 보도도 있다 ([stockanalysis.com](https://stockanalysis.com/stocks/googl/) 관련 Stock Analysis 자체 기사) | 구글 Gmail·Drive·Calendar에 AI 에이전트용 사용료를 도입했다는 보도는 새로운 수익원 확보로 읽힐 수 있어 상승 요인을 뒷받침할 수 있다 ([stockanalysis.com](https://stockanalysis.com/stocks/googl/) 관련 Business Insider 기사) | 낮음 — 상승·하락 근거가 팽팽함 |
+| 테슬라 (TSLA) | 방향성 불분명 | 11-26~11-27 | 상승: 스페이스X와의 합병 협상을 이끌 이사 5명이 지정됐다는 FT 보도로 3.5조달러 규모 합병 논의가 구체화되고 있다 ([stockanalysis.com](https://stockanalysis.com/stocks/tsla/) 관련 FT(TheFly 재인용) 기사)<br>하락: 로이터에 따르면 EU가 테슬라 자율주행 기술 승인 논의를 12월 15일로 연기했다 ([stockanalysis.com](https://stockanalysis.com/stocks/tsla/) 관련 Reuters 기사) | 투자자 게리 블랙은 합병 조건에 따라 테슬라 주가가 100달러 아래로 떨어질 수 있다고 경고해, 합병 추진 자체가 반드시 호재는 아닐 수 있다 ([stockanalysis.com](https://stockanalysis.com/stocks/tsla/) 관련 TipRanks 기사) | 낮음 — 상승·하락 근거가 팽팽함 |
+| 스페이스X (SPCX) | 방향성 불분명 | 11-26~11-27 | 상승: FCC가 궤도 위성 데이터센터 구축 계획을 승인했다는 보도가 있다 ([stockanalysis.com](https://stockanalysis.com/stocks/spcx/) 관련 CNBC·Reuters·WSJ 기사)<br>하락: 상원이 스페이스X의 비경쟁 군수계약을 제한하는 법안을 추진 중이라는 보도와, 앤트로픽 매도 여파로 주가가 사상 최저치에 근접했다는 보도가 있다 ([stockanalysis.com](https://stockanalysis.com/stocks/spcx/) 관련 TipRanks·Invezz 기사) | 테슬라와의 합병 논의가 구체화되고 있다는 점은 상승 요인을 뒷받침할 수 있다 ([stockanalysis.com](https://stockanalysis.com/stocks/tsla/) 관련 FT(TheFly 재인용) 기사) | 낮음 — 상승·하락 근거가 팽팽함 |
+| 삼성전자 | 하락 우세 | 11-26~11-27 | 1. 엔비디아가 11-25(현지) 신용등급 경고·中 수출 규제 속에 추가로 −3.91% 내렸는데, 이 흐름은 KRX 마감 후 나와 아직 반영되지 않았고 삼성전자는 엔비디아의 핵심 HBM 공급사다 ([stockanalysis.com](https://stockanalysis.com/stocks/nvda/) 관련 Reuters·Barron's 기사)<br>2. 뉴스1에 따르면 전일 급락의 배경으로 메모리 공급 과잉 우려가 거론됐고, 이 우려는 아직 해소되지 않았다 ([news1.kr](https://www.news1.kr/finance/market-exr/6365864)) | 삼성전자는 전일(11-25) −9.87% 급락한 뒤라 기술적 반등(저가 매수) 가능성이 있고, 오늘 한국은행 금리 결정 결과에 따라 변동성이 커질 수 있다 ([investing.com](https://www.investing.com/economic-calendar/south-korean-interest-rate-decision-473)) | 보통 — 독립적 하락 근거 2개(엔비디아 추가 약세 미반영, 메모리 공급과잉 우려 지속)가 있으나 전일 급락에 따른 반등 가능성·BOK 변수가 반대 요인으로 있음 |
+| SK하이닉스 | 하락 우세 | 11-26~11-27 | 1. 엔비디아 신용등급 경고·中 수출 규제가 KRX 마감 후 나와 아직 반영되지 않았고, SK하이닉스는 엔비디아의 핵심 HBM 공급사다 ([stockanalysis.com](https://stockanalysis.com/stocks/nvda/) 관련 Reuters·Barron's 기사)<br>2. 메모리 공급 과잉 우려가 전일 급락의 배경으로 거론됐고 아직 해소되지 않았다 ([news1.kr](https://www.news1.kr/finance/market-exr/6365864)) | SK하이닉스도 전일 −11.05% 급락한 뒤라 기술적 반등 가능성이 있고, 오늘 BOK 금리 결정 결과에 따라 변동성이 커질 수 있다 ([investing.com](https://www.investing.com/economic-calendar/south-korean-interest-rate-decision-473)) | 보통 — 독립적 하락 근거 2개(엔비디아 추가 약세 미반영, 메모리 공급과잉 우려 지속)가 있으나 전일 급락에 따른 반등 가능성·BOK 변수가 반대 요인으로 있음 |
+
+<sub>전망은 위 출처의 공개된 사실에 근거한 자체 판단이며 틀릴 수 있습니다. 가격 목표·확률·매매 의견이 아니며 투자 권유가 아닙니다.</sub>
+
+---
+<sub>수치는 각 출처의 기준 시각 값이며 실시간이 아닙니다. 확인되지 않은 항목은 "확인 필요"로 표시합니다. 매수·매도 의견과 목표가는 제공하지 않습니다.</sub>
